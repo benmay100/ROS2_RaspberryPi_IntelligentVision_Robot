@@ -3,7 +3,7 @@
 #dependencies 
 import rclpy
 from rclpy.node import Node
-from example_interfaces.msg import Int64
+from std_msgs.msg import Int64
 
 
 class PythonPublisher(Node): 
@@ -35,3 +35,4 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
+
