@@ -8,7 +8,7 @@ from std_msgs.msg import Int64
 
 class PythonPublisher(Node): 
     def __init__(self):
-        super().__init__('python_publisher')
+        super().__init__('rpi_python_publisher')
         self.get_logger().info('Python Publisher Node initialized')
 
         # Create publishers, subscribers, services, etc. here

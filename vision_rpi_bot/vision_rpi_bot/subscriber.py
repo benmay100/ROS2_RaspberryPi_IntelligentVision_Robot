@@ -8,7 +8,7 @@ from std_msgs.msg import Int64
 
 class PythonSubscriber(Node):
     def __init__(self):
-        super().__init__('python_subscriber')
+        super().__init__('rpi_python_subscriber')
         self.get_logger().info('Python Subscriber Node initialized')
 
         # Create publishers, subscribers, services, etc. here
