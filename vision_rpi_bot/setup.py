@@ -11,7 +11,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools', 'rclpy', 'geometry_msgs', 'pyserial'],
     zip_safe=True,
     maintainer='ben-may',
     maintainer_email='benalexandermay@gmail.com',
@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             "publisher_py = vision_rpi_bot.publisher:main",
-            "subscriber_py = vision_rpi_bot.subscriber:main"
+            "subscriber_py = vision_rpi_bot.subscriber:main",
+            "joystick_publisher = vision_rpi_bot.arduino_joystick_publisher:main"
         ],
     },
 )
