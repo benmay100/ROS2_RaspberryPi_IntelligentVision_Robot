@@ -1,7 +1,7 @@
 import cv2
 import sys # Import sys module to exit gracefully
 
-img = cv2.imread('/home/ben-may/ROS_Workspaces/luqman_course_ws/src/vision_rpi_bot/assets/left.png')
+img = cv2.imread('/home/ben-may/ros_workspaces/luqman_course_ws/src/vision_rpi_bot/assets/left.png')
 
 if img is None:
     print("Error: Could not load image. Check the path.")
